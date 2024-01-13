@@ -57,7 +57,7 @@ const Title = styled(motion.div)`
     font-size: ${(props) => props.theme.fontlg};
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
 
-    font-weight: 300;
+    font-weight: 500;
     text-transform: capitalize;
   }
 `;
