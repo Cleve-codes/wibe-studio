@@ -50,7 +50,7 @@ const Right = styled.div`
     width: 40%;
     position: absolute;
     right: 95%;
-    bottom: 15%;
+    bottom: 10%;
     z-index: 0;
   }
   .small-img-2 {
