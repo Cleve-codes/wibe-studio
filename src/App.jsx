@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Banner from './pages/Banner'
 import NewArrivals from "./pages/NewArrivals";
+import Footer from "./pages/Footer";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
               <Shop />
               <Banner />
               <NewArrivals />
+              <Footer />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
