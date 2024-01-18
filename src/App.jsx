@@ -1,18 +1,25 @@
 import React, { useRef } from "react";
+
+// Styles
 import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 import { ThemeProvider } from "styled-components";
+
+// Locomotive Scroll
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
-import Home from "./pages/Home";
+// Framer Motion
 import { AnimatePresence } from "framer-motion";
+
+// Pages
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Banner from './pages/Banner'
 import NewArrivals from "./pages/NewArrivals";
 import Footer from "./pages/Footer";
-import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
   const containerRef = useRef(null);
