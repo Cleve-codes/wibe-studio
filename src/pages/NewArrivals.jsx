@@ -174,7 +174,7 @@ const NewArrival = () => {
         scrollTrigger: {
           trigger: element,
           start: 'top top',
-          end: 'bottom bottom',
+          end: 'bottom top',
           scroller: '.App', //locomotive-scroll
           scrub: 1,
           pin: true,
@@ -194,7 +194,7 @@ const NewArrival = () => {
             // id: `section-${index + 1}`,
             trigger: scrollingElement,
             start: 'top top',
-            end: 'bottom bottom',
+            end: 'bottom top',
             scroller: '.App',
             scrub: 1,
             markers: true,
