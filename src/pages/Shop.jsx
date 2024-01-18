@@ -180,7 +180,7 @@ const Shop = () => {
           end: `${pinWrapWidth.scrollWidth * 2} bottom`,
           scroller: ".App", //locomotive-scroll
           scrub: 1,
-          markers: true,
+          // markers: true,
         },
         x: -pinWrapWidth,
         ease: "none",
