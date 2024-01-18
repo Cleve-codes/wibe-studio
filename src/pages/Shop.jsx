@@ -161,7 +161,7 @@ const Shop = () => {
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: 'bottom bottom',
+          end: `bottom bottom`,
           scroller: ".App", //locomotive element
           scrub: true,
           pin: true,
@@ -176,8 +176,8 @@ const Shop = () => {
       tl.to(scrollingElement, {
         scrollTrigger: {
           trigger: scrollingElement,
-          start: "top top",
-          end: `${pinWrapWidth.scrollWidth * 2} bottom`,
+          start: "top center",
+          end: "bottom center",
           scroller: ".App", //locomotive-scroll
           scrub: 1,
           // markers: true,

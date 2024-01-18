@@ -197,7 +197,7 @@ const NewArrival = () => {
             end: 'bottom top',
             scroller: '.App',
             scrub: 1,
-            markers: true,
+            // markers: true,
           },
         },
       );
