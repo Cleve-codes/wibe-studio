@@ -1,8 +1,8 @@
+import React, { useRef } from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 import { ThemeProvider } from "styled-components";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import Home from "./pages/Home";
@@ -10,6 +10,7 @@ import { AnimatePresence } from "framer-motion";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Banner from './pages/Banner'
+import NewArrivals from "./pages/NewArrivals";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               <About />
               <Shop />
               <Banner />
+              <NewArrivals />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
