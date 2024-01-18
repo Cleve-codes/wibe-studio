@@ -217,7 +217,7 @@ const NewArrival = () => {
       <Overlay />
 
       <Title
-        data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
+        data-scroll data-scroll-speed="-4" data-scroll-direction="horizontal"
       >
         New Arrivals
       </Title>
