@@ -159,10 +159,10 @@ const Shop = () => {
       tl.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: "50 top",
-          end: `200 bottom`,
-          scroller: ".App", //locomotive-scroll
-          scrub: 1,
+          start: "top top",
+          end: pinWrapWidth,
+          scroller: ".App", //locomotive element
+          scrub: true,
           pin: true,
           markers: true,
           // anticipatePin: 1,
@@ -170,23 +170,23 @@ const Shop = () => {
         height: `${scrollingElement.scrollWidth}px`,
         ease: "none",
       });
+      // ScrollTrigger.refresh();
 
       tl.to(scrollingElement, {
         scrollTrigger: {
           trigger: scrollingElement,
           start: "top top",
-          end: `${pinWrapWidth} bottom`,
+          end: pinWrapWidth,
           scroller: ".App", //locomotive-scroll
           scrub: 1,
           // markers: true,
         },
         x: -pinWrapWidth,
-
         ease: "none",
       });
       ScrollTrigger.refresh();
     }, 1000);
-    ScrollTrigger.refresh();
+    // ScrollTrigger.refresh();
 
     return () => {
       // tl.kill();
