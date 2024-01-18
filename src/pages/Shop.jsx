@@ -143,12 +143,12 @@ const Product = ({ img, title = "" }) => {
 
 const Shop = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const ref = useRef(null);
 
+  const sectionRef = useRef(null);
   const Horizontalref = useRef(null);
 
   useLayoutEffect(() => {
-    let element = ref.current;
+    let element = sectionRef.current;
 
     let scrollingElement = Horizontalref.current;
 
@@ -165,7 +165,7 @@ const Shop = () => {
           scroller: ".App", //locomotive element
           scrub: true,
           pin: true,
-          markers: true,
+          // markers: true,
           // anticipatePin: 1,
         },
         height: `${scrollingElement.scrollWidth}px`,
@@ -177,10 +177,10 @@ const Shop = () => {
         scrollTrigger: {
           trigger: scrollingElement,
           start: "top top",
-          end: pinWrapWidth,
+          end: `${pinWrapWidth.scrollWidth * 2} bottom`,
           scroller: ".App", //locomotive-scroll
           scrub: 1,
-          // markers: true,
+          markers: true,
         },
         x: -pinWrapWidth,
         ease: "none",
@@ -196,7 +196,7 @@ const Shop = () => {
   }, []);
 
   return (
-    <Section ref={ref} id="shop">
+    <Section ref={sectionRef} id="shop">
       <Title data-scroll data-scroll-speed="-1">
         New Collection
       </Title>
