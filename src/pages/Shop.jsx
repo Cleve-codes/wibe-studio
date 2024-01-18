@@ -154,13 +154,14 @@ const Shop = () => {
 
     let pinWrapWidth = scrollingElement.offsetWidth;
     let tl = gsap.timeline();
+    // console.log(pinWrapWidth);
 
     setTimeout(() => {
       tl.to(element, {
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: pinWrapWidth,
+          end: 'bottom bottom',
           scroller: ".App", //locomotive element
           scrub: true,
           pin: true,
@@ -186,7 +187,7 @@ const Shop = () => {
       });
       ScrollTrigger.refresh();
     }, 1000);
-    // ScrollTrigger.refresh();
+    ScrollTrigger.refresh();
 
     return () => {
       // tl.kill();

@@ -9,6 +9,17 @@ const GlobalStyles = createGlobalStyle`
   padding: 0;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.App {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 body {
   font-family: "Sirin Stencil";
   overflow-x: hidden;
