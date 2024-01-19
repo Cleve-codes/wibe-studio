@@ -135,7 +135,7 @@ const Footer = () => {
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Wibe Studio
+          Pendeza Online Store
         </h3>
       </LogoContainer>
       <FooterComponent

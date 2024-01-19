@@ -193,7 +193,7 @@ const NewArrival = () => {
           scrollTrigger: {
             // id: `section-${index + 1}`,
             trigger: scrollingElement,
-            start: 'top top',
+            start: 'top center',
             end: 'center 200',
             scroller: '.App',
             scrub: 1,

@@ -101,7 +101,7 @@ const Logo = () => {
         initial="hidden"
         animate="visible"
         >
-          Eleganzia | Online Shop
+          Pendeza | Online Shop
         </Text>
       </Link>
     </Container>
