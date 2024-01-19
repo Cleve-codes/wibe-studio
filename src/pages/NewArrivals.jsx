@@ -134,7 +134,7 @@ const Item = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  margin: 2rem 0;
 
   h2 {
   }
@@ -193,8 +193,8 @@ const NewArrival = () => {
           scrollTrigger: {
             // id: `section-${index + 1}`,
             trigger: scrollingElement,
-            start: 'top center',
-            end: 'center 200',
+            start: 'top top',
+            end: 'center 400',
             scroller: '.App',
             scrub: 1,
             markers: true,
