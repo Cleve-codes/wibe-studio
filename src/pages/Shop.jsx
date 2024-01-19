@@ -4,16 +4,16 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 
-import img1 from "../assets/Images/1.webp";
-import img2 from "../assets/Images/2.webp";
-import img3 from "../assets/Images/3.webp";
-import img4 from "../assets/Images/4.webp";
-import img5 from "../assets/Images/5.webp";
-import img6 from "../assets/Images/6.webp";
-import img7 from "../assets/Images/7.webp";
-import img8 from "../assets/Images/8.webp";
-import img9 from "../assets/Images/9.webp";
-import img10 from "../assets/Images/10.webp";
+import img1 from "../assets/Images/kibla.jpg";
+import img2 from "../assets/Images/afro.jpg";
+import img3 from "../assets/Images/bald.jpg";
+import img4 from "../assets/Images/dye.jpg";
+import img5 from "../assets/Images/brown1.jpg";
+import img6 from "../assets/Images/hero.jpg";
+import img7 from "../assets/Images/shoot2.jpg";
+import img8 from "../assets/Images/hair3.jpg";
+import img9 from "../assets/Images/dark1.jpg";
+import img10 from "../assets/Images/white.jpg";
 
 const Section = styled(motion.section)`
   min-height: 100vh;
@@ -215,10 +215,10 @@ const Shop = () => {
         </p>
       </Left>
       <Right data-scroll ref={Horizontalref}>
-        <Product img={img3} title="Sweatshirts" />
-        <Product img={img4} title="Ethnic Wear" />
-        <Product img={img1} title="Man Basics" />
-        <Product img={img2} title="Tops" />
+        <Product img={img1} title="Sweatshirts" />
+        <Product img={img2} title="Ethnic Wear" />
+        <Product img={img3} title="Man Basics" />
+        <Product img={img4} title="Tops" />
         <Product img={img5} title="Blazers" />
         <Product img={img6} title="Suits" />
         <Product img={img7} title="Antiques" />
