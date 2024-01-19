@@ -101,7 +101,7 @@ const Logo = () => {
         initial="hidden"
         animate="visible"
         >
-          Pendeza | Online Shop
+          Pendeza | Online Store
         </Text>
       </Link>
     </Container>

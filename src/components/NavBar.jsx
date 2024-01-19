@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 const NavContainer = styled(motion.div)`
 width: 100vw;
@@ -70,6 +71,18 @@ const itemVariants = {
 
 const NavBar = () => {
 
+  const { scroll } = useLocomotiveScroll();
+
+  const handleClick = (id) => {
+    let elem = document.querySelector(id);
+
+    scroll.scrollTo(elem, {
+      offset: "-100",
+      duration: 1000,
+      easing: [0.25, 0.46, 0.45, 0.94],
+    })
+  }
+
   const [toggleNavBar, setToggleNavBar] = useState(false)
 
   return (
@@ -100,18 +113,22 @@ const NavBar = () => {
       <MenuItem
       whileHover={{scale:1.1, y: -5}}
       whileTap={{scale: 0.9, y:0}}
+      onClick={() => handleClick('#home')}
       >Home</MenuItem>
       <MenuItem
       whileHover={{scale:1.1, y: -5}}
       whileTap={{scale: 0.9, y:0}}
+      onClick={() => handleClick('.about')}
       >About</MenuItem>
       <MenuItem
       whileHover={{scale:1.1, y: -5}}
       whileTap={{scale: 0.9, y:0}}
+      onClick={() => handleClick('#shop')}
       >Shop</MenuItem>
       <MenuItem
       whileHover={{scale:1.1, y: -5}}
       whileTap={{scale: 0.9, y:0}}
+      onClick={() => handleClick('.new-arrival')}
       >New Arrival</MenuItem>
       </MenuItems>
     </NavContainer>

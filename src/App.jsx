@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // Styles
 import GlobalStyles from "./styles/GlobalStyles";
@@ -20,9 +20,19 @@ import Shop from "./pages/Shop";
 import Banner from './pages/Banner'
 import NewArrivals from "./pages/NewArrivals";
 import Footer from "./pages/Footer";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
   const containerRef = useRef(null);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+        setLoaded(true)
+    }, 3000)
+
+  }, [])
 
   return (
     <>
@@ -42,6 +52,9 @@ function App() {
           }
           containerRef={containerRef}
         >
+          <AnimatePresence>
+            {loaded ? null :<Loader />}
+          </AnimatePresence>
           <ScrollTriggerProxy />
           <AnimatePresence>
             <main data-scroll-container className="App" ref={containerRef}>
