@@ -144,20 +144,22 @@ const About = () => {
         About Us
       </Title>
       <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-        We&apos;re fashion studio based in california. We create unique designs
-        that will blow your mind. We also design unique jewellary pieces.
-        Fashion is an ART that can not be grasped by everyone.
+        Welcome to Pendeza, the epitome of refined beauty and timeless elegance,
+        nestled in the heart of Nairobi, Kenya. More than a fashion studio, we
+        are curators of sophistication, dedicated to crafting designs that
+        transcend the ordinary and leave an indelible mark on your style
+        journey.
         <br />
         <br />
-        We are very dedicated to making our products. We offer unique and
-        creative products to a wide range of people. We have a variety of
-        styles, but for most people, all of the options are in the box. We
-        specialize in making things that make you happy.
+        From carefully curated designs to
+        exclusive jewelry pieces, every creation at Pendeza is a testament to
+        the artistry that unfolds when passion meets craftsmanship.
         <br />
         <br />
-        We strive to build on our vision. As a fashion label, we do our best to
-        create amazing experiences for all people. We are always looking to make
-        something that is easy for everyone.
+        Pendeza is more than a label; it's a celebration of diverse
+        beauty and a commitment to making your style journey effortlessly
+        exceptional. Join us on this journey, where each creation is a
+        brushstroke in the masterpiece of your elegance.
       </Left>
 
       <Right>

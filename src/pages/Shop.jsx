@@ -7,13 +7,13 @@ import styled from "styled-components";
 import img1 from "../assets/Images/kibla.jpg";
 import img2 from "../assets/Images/afro.jpg";
 import img3 from "../assets/Images/bald.jpg";
-import img4 from "../assets/Images/dye.jpg";
+import img4 from "../assets/Images/locs.jpg";
 import img5 from "../assets/Images/brown1.jpg";
-import img6 from "../assets/Images/hero.jpg";
-import img7 from "../assets/Images/shoot2.jpg";
-import img8 from "../assets/Images/hair3.jpg";
+import img6 from "../assets/Images/pink.jpg";
+import img7 from "../assets/Images/afro2.jpg";
+import img8 from "../assets/Images/creative.jpg";
 import img9 from "../assets/Images/dark1.jpg";
-import img10 from "../assets/Images/white.jpg";
+import img10 from "../assets/Images/last.jpg";
 
 const Section = styled(motion.section)`
   min-height: 100vh;
@@ -202,29 +202,30 @@ const Shop = () => {
       </Title>
       <Left>
         <p>
-          The brand new collection is currently being developed in USA. We
-          create our products using best quality material, including the use of
-          some of the pure fabrics to make our products. All products are made
-          using the best materials, from the finest cotton to the finest
-          fabrics.
+          Immerse yourself in the allure of Pendeza's latest collection,
+          crafted with meticulous attention to detail and a touch of glamour.
+          Each piece is a testament to our commitment to excellence,
+          meticulously developed in the vibrant city of Nairobi, Kenya.
           <br /> <br />
-          We have lots of different clothing options like shoes, jackets and
-          dresses. Not only clothes but we also provide unique Jewellery as
-          well. It is great for us to carry our new clothes all around the
-          country and look different.
+          At Pendeza, we pride ourselves on using only the finest materials,
+          ensuring that every garment, from exquisite dresses to stylish shoes,
+          is a masterpiece of luxury and comfort. Elevate your wardrobe with our
+          exclusive range, where each outfit is designed to make you stand out
+          and feel extraordinary. Explore the beauty of our new collection and
+          let Pendeza redefine your style with unparalleled elegance.
         </p>
       </Left>
       <Right data-scroll ref={Horizontalref}>
-        <Product img={img1} title="Sweatshirts" />
-        <Product img={img2} title="Ethnic Wear" />
-        <Product img={img3} title="Man Basics" />
-        <Product img={img4} title="Tops" />
-        <Product img={img5} title="Blazers" />
-        <Product img={img6} title="Suits" />
-        <Product img={img7} title="Antiques" />
-        <Product img={img8} title="Jewellery" />
-        <Product img={img9} title="Watches" />
-        <Product img={img10} title="Special Edition" />
+        <Product img={img1} title="Shaving Oil" />
+        <Product img={img2} title="Natural Hair" />
+        <Product img={img3} title="Natural Hair-Dye" />
+        <Product img={img4} title="Dreadlocks" />
+        <Product img={img5} title="Layered Cut" />
+        <Product img={img6} title="Top knot" />
+        <Product img={img7} title="Shag" />
+        <Product img={img8} title="Straight 'n Sleek" />
+        <Product img={img9} title="Afro Hair" />
+        <Product img={img10} title="Traditional Braiding" />
       </Right>
     </Section>
   );
