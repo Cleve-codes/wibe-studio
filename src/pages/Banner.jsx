@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
   min-height: 100vh;
   width: 80vw;
+  margin-top: 4em;
   margin: 0 auto;
 
   display: flex;

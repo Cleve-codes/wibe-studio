@@ -8,6 +8,7 @@ import img1 from "../assets/Images/shoot2.jpg";
 import img2 from "../assets/Images/arrival2.jpg";
 import img3 from "../assets/Images/more.jpg";
 import img4 from "../assets/Images/oil.jpg";
+import { useGSAP } from "@gsap/react";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -151,7 +152,7 @@ const NewArrival = () => {
 
   const ScrollingRef = useRef(null);
 
-  useLayoutEffect(() => {
+  useGSAP(() => {
     let element = ref.current;
 
     let scrollingElement = ScrollingRef.current;

@@ -14,6 +14,7 @@ import img7 from "../assets/Images/afro2.jpg";
 import img8 from "../assets/Images/creative.jpg";
 import img9 from "../assets/Images/dark1.jpg";
 import img10 from "../assets/Images/last.jpg";
+import { useGSAP } from "@gsap/react";
 
 const Section = styled(motion.section)`
   min-height: 100vh;
@@ -147,7 +148,7 @@ const Shop = () => {
   const sectionRef = useRef(null);
   const Horizontalref = useRef(null);
 
-  useLayoutEffect(() => {
+  useGSAP(() => {
     let element = sectionRef.current;
 
     let scrollingElement = Horizontalref.current;
@@ -161,11 +162,11 @@ const Shop = () => {
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: `bottom bottom`,
+          end: `bottom 95%`,
           scroller: ".App", //locomotive element
           scrub: true,
           pin: true,
-          // markers: true,
+          markers: true,
           // anticipatePin: 1,
         },
         height: `${scrollingElement.scrollWidth}px`,
@@ -176,7 +177,7 @@ const Shop = () => {
       tl.to(scrollingElement, {
         scrollTrigger: {
           trigger: scrollingElement,
-          start: "top center",
+          start: "20% center",
           end: "bottom center",
           scroller: ".App", //locomotive-scroll
           scrub: 1,

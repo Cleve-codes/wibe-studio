@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
 const ScrollTriggerProxy = () => {
 
@@ -14,7 +15,7 @@ const ScrollTriggerProxy = () => {
   // Register scroll trigger pluggin
   gsap.registerPlugin(ScrollTrigger)
 
-  useEffect(() => {
+  useGSAP(() => {
     if (scroll) {
       const element = scroll?.el;
 
