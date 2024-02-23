@@ -166,7 +166,7 @@ const Shop = () => {
           scroller: ".App", //locomotive element
           scrub: true,
           pin: true,
-          markers: true,
+          // markers: true,
           // anticipatePin: 1,
         },
         height: `${scrollingElement.scrollWidth}px`,
