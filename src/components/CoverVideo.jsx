@@ -59,7 +59,8 @@ const Title = styled(motion.div)`
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
 
     @media (max-width: 30em) {
-      font-size: ${(props) => props.theme.fontmd};
+      font-size: ${(props) => props.theme.font2xl};
+      margin-bottom: 1em;
       /* font-size: calc(5rem + 8vw); */
     }
   }
