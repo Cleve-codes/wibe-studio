@@ -185,7 +185,7 @@ const Footer = () => {
           >
             Made with &hearts; by{" "}
             <a
-              href="https://github.com/Cleve-codes"
+              href="https://clevesfolio.vercel.app/"
               target={"_blank"}
               rel="dofollow noreferrer"
             >
